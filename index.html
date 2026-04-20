@@ -1,0 +1,32 @@
+<!-- create quiz UI with question, 4 options, next button and score display -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz App</title>
+    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+    <div class="quiz-container">
+        <h1>🧠 Ultimate Quiz Game</h1>
+        <div class="difficulty-selector">
+            <label for="difficulty">🎯 Choose Difficulty:</label>
+            <select id="difficulty">
+                <option value="easy">😊 Easy</option>
+                <option value="medium">🤔 Medium</option>
+                <option value="hard">💪 Hard</option>
+            </select>
+            <button id="start-quiz">🚀 Start Quiz</button>
+            <button id="view-high-scores">🏆 View High Scores</button>
+        </div>
+        <div id="quiz-content" style="display: none;">
+            <div class="question" id="question"></div>
+            <div class="options" id="options"></div>
+            <button class="next-button" id="next">Next</button>
+            <div class="score" id="score">Score: 0</div>
+        </div>
+    </div>
+</body>
+</html>
